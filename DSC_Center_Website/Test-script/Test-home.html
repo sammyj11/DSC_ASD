@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <!-- mobile specific metas
+ ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>DST Centre of Excellence for Climate Information</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      scroll-padding-top: 0%; /* Adjust this value according to your header height */
+    }
+
+    #header {
+      width: 100%;
+      background-color: rgb(167, 78, 194);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      position: relative;
+      left: 10px;
+    }
+
+
+
+    #navmenu {
+      display: flex;
+      justify-content: center;
+      margin-top: 1%;
+    }
+
+    #navmenu ul {
+      display: flex;
+    }
+
+    #navmenu ul li a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+
+    .mobile-nav-toggle {
+      font-size: 2rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    .logo {
+      margin-left: 3%; /* Adjust as necessary */
+      margin-top: 0%; /* Adjust vertically */
+      position: absolute; /* Optional, for more control */
+    }
+
+    #home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      color: rgb(255, 255, 255);
+      padding-top: 50px;
+      text-align: center;
+      background-color: rgb(255, 255, 255); /* Light blue color */
+      padding: 20px; /* Adding some padding for better appearance */
+    }
+
+    @font-face {
+      font-family: 'Bitter';
+      src: url('assets/Font/Bitter-Bold/bitter/Bitter-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    #navmenu ul li a {
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      font-family: 'Bitter', sans-serif;
+    }
+
+    #fade-container {
+      font-family: 'Courier New', monospace;
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    .visible {
+      opacity: 1;
+    }
+
+
+    @font-face {
+            font-family: 'Mories';
+            src: url('assets/Font/Allrounder Antiqua Test/AllrounderAntiquaTest-Bold.otf') format('opentype'); /* Adjust the path */
+            font-weight: bold;
+            font-style: normal;
+        }
+
+
+
+  </style>
+
+</head>
+
+<body class="index-page">
+  <header id="header" class="header fixed-top">
+    <div class="header-top">
+      <a href="https://home.iitd.ac.in/">
+        <img src="assets/img/logo-iit.png" alt="Logo" class="logo" style="width: 80px; height: 80px;">
+      </a>
+
+      
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li class="current"><a href="#home" class="smoothscroll">Home</a></li>
+        <li><a href="#about" class="smoothscroll">About</a></li>
+        <li><a href="#research" class="smoothscroll">Research</a></li>
+        <li><a href="#publications" class="smoothscroll">Publications</a></li>
+        <li><a href="#leadership" class="smoothscroll">Leadership</a></li>
+        <li><a href="#opportunites" class="smoothscroll">Opportunities</a></li>
+        <li><a href="#contact" class="smoothscroll">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  </header>
+
+
+
+  <style>
+
+      #home video {
+      position: relative;
+      width: 110%;
+      height: 100%;
+      object-fit: cover; /* Ensures the video covers the entire section */
+      z-index: 1; /* Set behind other content */
+    }
+  </style>
+  <section id="home" style="height: 1000px;">
+    <video autoplay loop muted playsinline style="width: 120%; height: 120%; object-fit: cover; transform: scale(1.2) translateX(10%) translateY(0%);">
+        <source src="assets/img/Home/20481077-hd_1920_1080_30fps.mp4" type="video/mp4">
+      
+      Your browser does not support the video tag.
+    </video>
+
+
+    <div id="overlay-text" style=" margin-left: -45%; z-index: 1; position: absolute; color: white; font-size: 2em; text-align: center; font-family: 'AllrounderAntiqua', serif;">
+        DST Center of Excellence for Climate Infromation <br>
+        CAS | IID Delhi 
+    </div>
+  </section>
+
+
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-----------------------------------------ABOUT-------------------------------------->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+      scroll-padding-top: 0%; /* Adjust this value according to your header height */
+
+    }
+
+        #about {
+    margin-top: 0%;
+    margin-bottom:2%;                                           
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Ensure the video doesn't overflow */
+}
+
+
+        #about video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 90%;
+            object-fit: contain; /* Ensure the video covers the background nicely */
+            transform: translate(-50%, -50%);
+            z-index: -1; /* Ensure the video is behind any content */
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <section id="about" class="about section">
+
+          <!-- Section Title -->
+    <div class="container section-title" style="margin-top: -23%; margin-bottom: 3%;"data-aos="fade-up">
+      <h2>About Us</h2>
+    </div><!-- End Section Title -->
+        <video autoplay loop muted playsinline>
+            <source src="assets/img/About/AboutBG.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Add additional content here if needed -->
+    </section>
+    <script>
+      const video = document.querySelector('video');
+      video.addEventListener('error', function(event) {
+          console.error('Video Error: ', event);
+      });
+  
+      video.addEventListener('stalled', function(event) {
+          console.log('Video stalled');
+      });
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+<!-------------------------------------------RESEARCH----------------------------------->
+
+<!----------------------------RESEARCH CSS IPAD-------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+  #research {
+    background-color: white;
+  }
+@media only screen and (max-width: 1024px) {
+  .text-content h1 {
+    font-size: 100%;
+  }
+  
+  .text-content p {
+    font-size: 80%;
+  }
+
+  /* Adjust the dimensions of .lottie-player */
+  .image-content dotlottie-player {
+    width: 100px; /* originally 450px, reduce by 60% */
+    height: 100px; /* originally 450px, reduce by 60% */
+    transform: scale(1.2); /* Adjust so that the scaling corresponds with the size reduction */
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .container1, .image-content{
+      margin-top: -30%;
+  }
+
+  .container1, .h1{
+      margin-top: -10%;
+  }
+
+  .container2, .image-content{
+      margin-top: -30%;
+  }
+
+  .container2, .h1{
+      margin-top: -40%;
+  }
+
+  .image-content,
+  .text-content {
+    padding: 0;
+    width: 40%;
+    text-align: left;
+  }
+
+  .image-content {
+    padding-top: 20px; /* Adjust padding as needed */
+  }
+}
+</style>
+</body>
+</html>
+
+
+<!----------------------------RESEARCH HTML-------------------------------------->
+
+<style>
+
+
+  #research .h1 {
+     font-size: 50px;
+     
+  }
+
+    </style>
+
+
+<section id="research" class="research section">
+  <div class="container" style="width: 100%; align-items: center;">
+    <div class="row align-items-center md-wrap-reverse">
+      <div class="col-lg-12">
+        <div class="section-title">
+          <h2 style="text-align:center ; margin-top:-1% ;" class="title-main">Research</h2>
+        </div>
+
+
+        <!------------------------0th ANIMATION AND Text------------------------------------>
+          <div style="padding-top:10px; padding-bottom:100px" class="container0" data-aos="fade-up" data-aos-delay="100">
+
+            <div style="padding-left:10%; padding-top:40px;" class="image-content">
+              <!-- Replace Lottie player with an image tag for the GIF -->
+              <img src="assets/img/RESEARCH/Climate-information.gif" alt="Description of the GIF" style="width: 300px; height: 180px; transform: scale(1.5); border-radius: 40px;">
+        </div>
+            <div style="padding-left:50%" class="text-content">
+              <h1 style="text-align: left; color: black;margin-top: -25%; font-size: 30px;">Climate Information</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">Educating a new generation of researchers in numerical modeling of the Earth’s system</p>
+
+            </div>
+            </div>
+
+        <!------------------------1ST ANIMATION AND Text------------------------------------>
+        <div class="container1" data-aos="fade-up" data-aos-delay="200">
+          <div class="content-wrapper" style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; padding-top: 90px;">
+            <div class="text-content" style="flex: 1; padding-left: 10%;">
+              <h1 style="text-align: left; color: black; margin-top: -10%; font-size: 30px;">Climate Modeling</h1>
+              <p style="text-align: left; color: black; font-size: 17px;" >A major initiative for skillful simulation and projection of India's climate</p>
+            </div>
+            <div style="padding-right:10%;" class="image-content">
+              <img src="assets/img/RESEARCH/modeling3.gif" alt="Future Projection GIF" style="width: 150px; height: 150px; transform: scale(1.8); margin-top: -65%;">
+        </div>
+
+          </div>
+
+
+
+
+          <!------------------------2ND ANIMATION AND Text------------------------------------>
+          <div style="padding-bottom:90px" class="container2" data-aos="fade-up" data-aos-delay="100">
+
+            <div style="padding-left:10%; padding-top:40px;" class="image-content">
+              <!-- Replace Lottie player with an image tag for the GIF -->
+              <img src="assets/img/RESEARCH/Decision Making.gif" alt="Description of the GIF" style="width: 200px; height: 180px; transform: scale(1.5); border-radius: 40px;">
+        </div>
+          <div style="padding-left:50%;" class="text-content">
+              <h1 style="text-align: left; color: black; margin-top: -15%; font-size: 30px;">Sequential Descision Making</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">Developing a modeling framework for fine scale projections of India’s future climate to assess the impact of climate change on different sectors</p>
+
+
+          </div>
+          </div>
+
+          <!------------------------3RD ANIMATION AND Text------------------------------------>
+          <div style="padding-bottom:20px" class="container3" data-aos="fade-up" data-aos-delay="100">
+            <div style="padding-top:5%;margin-left: 10%;" class="text-content">
+                <h1 style="text-align: left;  color: black; font-size: 30px;">Process Understanding</h1>
+                <p style="text-align: left; color: black; font-size: 17px;">Addressing unique issues of climate variability, change <br> and sectoral impacts in India</p>
+            </div>
+
+            <div style="padding-left:60%;" class="image-content">
+                  <img src="assets/img/RESEARCH/Process.gif" alt="Future Projection GIF" style="width: 220px; height: 180px; transform: scale(1.8); margin-top: -30%;">
+            </div>
+
+              <!----
+              <div style="padding-left:65%;" class="image-content">
+
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+                <dotlottie-player src="https://lottie.host/9f31f3ad-2ec7-4064-b7c9-1387ec328592/5SYqnDhvcr.json" background="transparent" speed="1" style="width: 300px; height: 300px;transform: scale(1.8);margin-top: -45%;" loop autoplay></dotlottie-player>
+          </div> -->
+          </div>
+
+
+          <!------------------------4th ANIMATION AND Text------------------------------------>
+          <div style="padding-top:30px; padding-bottom:100px" class="container4" data-aos="fade-up" data-aos-delay="100">
+            
+
+            <div style="padding-left:10%; padding-top:40px;" class="image-content">
+                  <!-- Replace Lottie player with an image tag for the GIF -->
+                  <img src="assets/img/RESEARCH/ML.gif" alt="Description of the GIF" style="width: 320px; height: 180px; transform: scale(1.5); border-radius: 40px;">
+            </div>
+            <div style="padding-left:50%" class="text-content">
+              <h1 style="text-align: left; color: black;margin-top: -20%; font-size: 30px;">Credible Climate<br> Projection Using ML</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">Educating a new generation of researchers in numerical modeling of the Earth’s system</p>
+
+            </div>
+            </div>
+
+
+            <!------------------------5TH ANIMATION AND Text------------------------------------>
+          <div style="padding-bottom:20px" class="container3" data-aos="fade-up" data-aos-delay="100">
+            <div style="padding-top:10%; margin-left:10% ;" class="text-content">
+                <h1 style="text-align: left; margin-top: -10%; color: black; font-size: 30px;">Fluid Mechenics</h1>
+                <p style="text-align: left; color: black; font-size: 17px;">Addressing unique issues of climate variability, change <br> and sectoral impacts in India</p>
+            </div>
+
+
+              
+              <div style="padding-left:60%;" class="image-content">
+
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+                <dotlottie-player src="https://lottie.host/9f31f3ad-2ec7-4064-b7c9-1387ec328592/5SYqnDhvcr.json" background="transparent" speed="1" style="width: 200px; height: 180px;transform: scale(1.8);margin-top: -30%;" loop autoplay></dotlottie-player>
+          </div>
+          </div>
+
+
+          <!------------------------6th ANIMATION AND Text------------------------------------>
+          <div style="padding-top:30px; padding-bottom:100px" class="container4" data-aos="fade-up" data-aos-delay="100">
+            
+
+            <div style="padding-left:10%; padding-top:40px;" class="image-content">
+                  <!-- Replace Lottie player with an image tag for the GIF -->
+                  <img src="assets/img/RESEARCH/policy.gif" alt="Description of the GIF" style="width: 300px; height: 180px; transform: scale(1.5); border-radius: 40px;">
+            </div>
+            <div style="padding-left:50%" class="text-content">
+              <h1 style="text-align: left; color: black;margin-top: -20%; font-size: 30px;">Climate Policy</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">Educating a new generation of researchers in numerical modeling of the Earth’s system</p>
+
+            </div>
+            </div>
+
+
+                        <!------------------------7TH ANIMATION AND Text------------------------------------>
+          <div style="padding-bottom:20px" class="container3" data-aos="fade-up" data-aos-delay="100">
+            <div style="padding-top:10%; margin-left:10% ;" class="text-content">
+                <h1 style="text-align: left; margin-top: -10%; color: black; font-size: 30px;">Cloud Parameterization</h1>
+                <p style="text-align: left; color: black; font-size: 17px;">Addressing unique issues of climate variability, change <br> and sectoral impacts in India</p>
+            </div>
+
+
+              
+              <div style="padding-left:60%;" class="image-content">
+
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+                <dotlottie-player src="https://lottie.host/9f31f3ad-2ec7-4064-b7c9-1387ec328592/5SYqnDhvcr.json" background="transparent" speed="1" style="width: 200px; height: 180px;transform: scale(1.8);margin-top: -30%;" loop autoplay></dotlottie-player>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-----------------------------------------PUBLICATIONS------------------------------------------------>
+
+
+<style>
+  #publications {
+    padding-top: 1.8%;
+    padding-bottom: 10%;
+    /*background-color: rgb(230, 227, 227);*/
+    color: #333;
+}
+
+.Papers {
+            text-align: justify;
+        }
+
+
+
+
+     /* Adjustments for iPad and similar screen sizes */
+     @media (max-width: 1024px) {
+        #publications {
+          padding-top: 10%;
+          padding-bottom: 10%;
+          background-color: rgba(255, 255, 255, 0.8);
+          color: #333;
+      }
+
+        .Papers {
+        text-align: justify;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+        font-size: 14px;
+        }
+    }
+
+        @media (max-width: 768px) {
+          #publications {
+          padding-top: 50%;
+          padding-bottom: 10%;
+          background-color: rgba(255, 255, 255, 0.8);
+          color: #333;
+      }
+
+      .Papers {
+        text-align: justify;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+        font-size: 14px;
+        }
+        }
+
+</style>
+
+<!-- Services Section -->
+<section id="publications" class="services section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
+    <h2>Publications</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="200">
+        <!-- Edit 25-07-2023 -->
+        <p>
+          <span class="pub-title"
+          >Namdev, P., M. Sharan, P. Srivastava, and S. K. Mishra,
+          2024:</span
+          ><span class="pub-content"
+          ><strong
+          > An Updated Parameterization of the Unstable Atmospheric Surface Layer in WRF Modeling System.</strong
+          ></span
+          >
+          <span class="pub-extention"
+          ><em> Geoscientific Model Development.</em>
+          <strong></strong> [Impact Factor: 4.0]</span
+          >
+          </p>
+      </div><!-- End Service Item -->
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="300">
+        <!-- Edit 25-07-2023 -->
+        <p>
+          <span class="pub-title"
+          >Namdev, P., M. Sharan, and S. K. Mishra,
+          2024:</span
+          ><span class="pub-content"
+          ><strong
+          > On the Extent of Applicability of Various Non-Linear Similarity Functions for Computation of Surface Fluxes Under Stable Conditions in Numerical Models.</strong
+          ></span
+          >
+          <span class="pub-extention"
+          ><em> Boundary Layer Meteorology.</em>
+          <strong></strong> [Impact Factor: 4.3]</span
+          >
+          </p>
+      </div><!-- End Service Item -->
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="400">
+        <!-- Edit 25-07-2023 -->
+        <p>
+          <span class="pub-title"
+            >Tyagi, S., S. Sahany, D. Saraswat ,  S. K. Mishra, A. Dubey, and  D. Niyogi, 2024:</span
+          ><span class="pub-content"
+            ><strong
+              > Assessing Regional-Scale Heterogeneity in Blue-Green Water Availability under the 1.5&deg C Global Warming Scenario.</strong
+            ></span
+          >
+          <span class="pub-extention"
+            ><em>Journal of Applied Meteorology and Climatology,</em>
+            <strong>63(4), 553-574.</strong> DOI:10.1175/JAMC-D-23-0083.1. [Impact Factor: 3.0]</span
+          >
+        </p>
+      </div><!-- End Service Item -->
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="500">
+        <!-- Edit 25-07-2023 -->
+        <p>
+          <span class="pub-title"
+          >Namdev, P., P. Srivastava, M. Sharan, and S. K. Mishra,
+          2023:</span
+          ><span class="pub-content"
+          ><strong
+          > An Update to WRF Surface Layer Parameterization over an Indian Region.</strong
+          ></span
+          >
+          <span class="pub-extention"
+          ><em> Dynamics of Atmospheres and Oceans,</em>
+          <strong>105, 101414.</strong> DOI:10.1016/j.dynatmoce.2023.101414. [Impact Factor: 2.049]</span
+          >
+       </p>
+      </div><!-- End Service Item -->
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="600">
+        <!-- Edit 25-07-2023 -->
+        <p>
+          <span class="pub-title"
+          >Dixit, A., S. Sahany, and S. K. Mishra,
+          2023:</span
+           ><span class="pub-content"
+          ><strong
+          > Modeling the Climate Change Impact on Hydroclimate Fluxes over the Beas Basin using a High-Resolution Glacier-Atmosphere-Hydrology Coupled Setup.</strong
+          ></span
+          >
+          <span class="pub-extention"
+          ><em> Journal of Hydrology,</em>
+          <strong>627, 130219.</strong> DOI:10.1016/j.jhydrol.2023.130219. [Impact Factor: 6.708]</span
+          >
+          </p>
+      </div><!-- End Service Item -->
+
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="400">
+        <!-- Edit 25-07-2023 -->
+        <p>
+          <span class="pub-title"
+            >Bhuyan, D. P., P. Salunke, and M. Chadha,
+            2023:</span
+             ><span class="pub-content"
+             ><strong
+             > Climate projections for Himalaya-Tibetan Highland.</strong
+             ></span
+             >
+             <span class="pub-extention"
+             ><em> Theoritical and Applied Climatology,</em>
+             <strong>155(2), 1-11.</strong> DOI:10.1007/s00704-023-04677-w. [Impact Factor: 3.4]</span
+             >
+              </p>
+      </div><!-- End Service Item -->
+
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="400">
+        <!-- Edit 25-07-2023 -->
+        <p>
+          <span class="pub-title"
+            >Bhuyan, D. P., P. Salunke, and M. Chadha,
+            2023:</span
+             ><span class="pub-content"
+             ><strong
+             > Climate projections for Himalaya-Tibetan Highland.</strong
+             ></span
+             >
+             <span class="pub-extention"
+             ><em> Theoritical and Applied Climatology,</em>
+             <strong>155(2), 1-11.</strong> DOI:10.1007/s00704-023-04677-w. [Impact Factor: 3.4]</span
+             >
+              </p>
+      </div><!-- End Service Item -->
+
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="400">
+         <!-- Edit 22-07-2023 -->
+          <p>
+            <span class="pub-title"
+              >Mishra, S. K., P. Upadhyaya, J. T. Fasullo, N. P. Keshri, P. Salunke, A. Ghosh, A. B. Sainudeen, and In-Sik Kang,
+              2023:</span
+            ><span class="pub-content"
+              ><strong
+                > A Need for Actionable Climate Projections Across the Global South.</strong
+              ></span
+            >
+            <span class="pub-extention"
+              ><em> Nature Climate Change,</em>
+              <strong>13(9), 883-886.</strong> DOI:10.1038/s41558-023-01778-2. [Impact Factor: 28.66]</span
+            >
+          </p>
+      </div><!-- End Service Item -->
+
+
+      <div class="Papers" data-aos="fade-up" data-aos-delay="400">
+        <!-- 022-07-2023  -->
+          <!-- Edit 22-07-2023 -->
+          <p>
+            <span class="pub-title"
+              >Kumar, R., R. Pathak, S. Sahany, and S. K. Mishra,
+              2023:</span
+            ><span class="pub-content"
+              ><strong
+                > Indian Summer Monsoon Simulations in Successive Generations of the NCAR Community Atmosphere Model.</strong
+              ></span
+            >
+            <span class="pub-extention"
+              ><em> Theoretical and Applied Climatology,</em>
+              <strong>153(3), 977-992.</strong> DOI:10.1007/s00704-023-04514-0. [Impact Factor: 3.4]</span
+            >
+          </p>
+     </div><!-- End Service Item -->
+
+
+     <div class="Papers" data-aos="fade-up" data-aos-delay="400">
+      <!-- 022-07-2023  -->
+
+        <!-- Edit 22-07-2023 -->
+
+        <p>
+          <span class="pub-title"
+            >Kumar, P., A. Chakraborty, S. K. Mishra, and V. S. Prasad,
+            2023:</span
+          ><span class="pub-content"
+            ><strong
+              > Climate Modeling (in India's Climate Research Agenda: 2030 and Beyond, pp. 31-45).</strong
+            ></span
+          >
+          <span class="pub-extention"
+            ><em> Book Chapter</em>.
+            <strong></strong> [Impact Factor: NA]</span
+          >
+        </p>
+   </div><!-- End Service Item -->
+
+
+   <div class="Papers" data-aos="fade-up" data-aos-delay="400">
+    <!-- 022-07-2023  -->
+
+      <!-- Edit 22-07-2023 -->
+      <p>
+        <span class="pub-title"
+          >Dixit, A., S. Sahany, S. K. Mishra, and M. D. S. Mesquita,
+          2023:</span
+        ><span class="pub-content"
+          ><strong
+            > Seasonal Dependent Suitability of Physical Parametrizations to Simulate Precipitation over the Himalayan Headwater.</strong
+          ></span
+        >
+        <span class="pub-extention"
+          ><em> Scientific Reports,</em>
+          <strong>13(1), 4756.</strong> DOI:10.1038/s41598-023-31353-w. [Impact Factor: 5.0]</span
+        >
+      </p>
+ </div><!-- End Service Item -->
+
+
+ <div class="Papers" data-aos="fade-up" data-aos-delay="400">
+  <!-- Edit 04-03-2023 -->
+
+      <p>
+        <span class="pub-title"
+          >Salunke, P., N. Prasad, S. K. Mishra, and S. K. Dash,
+          2023:</span
+        ><span class="pub-content"
+          ><strong
+            > Future Projections of Seasonal Temperature and Precipitation for India.</strong
+          ></span
+        >
+        <span class="pub-extention"
+          ><em> Frontiers in Climate,</em>
+          <strong>5, 1069994.</strong> DOI:10.3389/fclim.2023.1069994. [Impact Factor: NA]</span
+        >
+      </p>
+
+    <!-- 04-03-2023  -->
+</div><!-- End Service Item -->
+
+
+<div class="Papers" data-aos="fade-up" data-aos-delay="400">
+        <!-- Edit 22-11-2022 -->
+
+        <p>
+          <span class="pub-title"
+            >Namdev, P., M. Sharan, and S. K. Mishra,
+            2022:</span
+          ><span class="pub-content"
+            ><strong
+              > Impact of the Similarity Functions of Surface Layer Parameterization in a Climate Model over the Indian Region.</strong
+            ></span
+          >
+          <span class="pub-extention"
+            ><em> Quarterly J. of Royal Meteorological Society,</em>
+            <strong>149(750), 152-170.</strong> DOI:10.1002/qj.4400. [Impact Factor: 7.2]</span
+          >
+        </p>
+</div><!-- End Service Item -->
+
+
+
+<div class="Papers" data-aos="fade-up" data-aos-delay="400">
+        <!-- Edit 6-10-2022  -->
+        <p>
+          <span class="pub-title"
+            >Tyagi, S., X. Zhang, D. Saraswat , S. Sahany, S. K. Mishra, and  D. Niyogi, 2022:</span
+          ><span class="pub-content"
+            ><strong
+              > Flash Drought: Review of Concept, Prediction and the Potential for Machine Learning, Deep Learning Methods.</strong
+            ></span
+          >
+          <span class="pub-extention"
+            ><em>Earth's Future,</em> <strong>10(11), e2022EF002723.</strong>
+            DOI:10.1029/2022EF002723. [Impact Factor: 9.0]</span
+          >
+        </p>
+
+</div><!-- End Service Item -->
+
+
+<div class="Papers" data-aos="fade-up" data-aos-delay="400">
+          <!-- Edit 6-10-2022  -->
+          <p>
+            <span class="pub-title"
+              >Saini, A., N. Sahu, S. K. Mishra, S. Jain, S. Behera, and S. K. Dash, 2022:</span
+            ><span class="pub-content"
+              ><strong
+                > The Spatio-Temporal Onset Characteristics of Indian Summer Monsoon Rainfall and Their Relationship with Climate Indices.</strong
+              ></span
+            >
+            <span class="pub-extention"
+              ><em>Atmosphere,</em> <strong>13, 1581.</strong>
+              [Impact Factor: 3.1]</span
+            >
+          </p>
+
+</div><!-- End Service Item -->
+
+
+<div class="Papers" data-aos="fade-up" data-aos-delay="400">
+          <!-- Edit 13-8-2022  -->
+          <p>
+            <span class="pub-title"
+              >Agrawal, T., S. H. Peddada, and V. K. Chalamalla, 2022:</span
+            ><span class="pub-content"
+              ><strong
+                > Dynamics of a buoyant gravity current propagating in a linearly stratified medium.</strong
+              ></span
+            >
+            <span class="pub-extention"
+              ><em>Physics of Fluids,</em> <strong> 34(7), 076605.</strong>
+              DOI:10.1063/5.0091683. [Impact Factor: 5.0]</span
+            >
+          </p>
+
+</div><!-- End Service Item -->
+
+
+<div class="Papers" data-aos="fade-up" data-aos-delay="400">
+          <!-- Edit 23-5-2022  -->
+          <p>
+            <span class="pub-title"
+              >Parihar R. S., P. K. Bal, A. Saini, S. K. Mishra, and A. Thapliyal, 2022:</span
+            ><span class="pub-content"
+              ><strong
+                > Potential Future Malaria Transmission due to Climate Change in Odisha, India.</strong
+              ></span
+            >
+            <span class="pub-extention"
+              ><em>Scientific Reports,</em> <strong>12(1), 9048.</strong>
+              DOI:10.1038/s41598-022-13166-5. [Impact Factor: 5.0]</span
+            >
+          </p>
+
+</div><!-- End Service Item -->
+
+
+<div class="Papers" data-aos="fade-up" data-aos-delay="400">
+          <!-- Edit 20-12-2021  -->
+          <p>
+            <span class="pub-title"
+              >Tewari, K., S. K. Mishra, P. Salunke, H. Ozawa and A. Dewan, 2022:</span
+            ><span class="pub-content"
+              ><strong
+                > Potential Effects of the Projected Antarctic Sea-Ice Loss on the Climate System.</strong
+              ></span
+            >
+            <span class="pub-extention"
+              ><em>Climate Dynamics,</em> <strong>60(1-2), 589-601.</strong>
+              DOI:10.1007/s00382-022-06320-2. [Impact Factor: 4.9]</span
+            >
+          </p>
+
+</div><!-- End Service Item -->
+
+
+
+<div class="Papers" data-aos="fade-up" data-aos-delay="400">
+          <!-- Edit 20-12-2021  -->
+          <p>
+            <span class="pub-title"
+              >Kewalramani, G., C. S. Pant, and A. Bhattacharya, 2022:</span
+            ><span class="pub-content"
+              ><strong
+                > Energy consistent Gaussian integral model for jet with off-source heating.</strong
+              ></span
+            >
+            <span class="pub-extention"
+              ><em>Physical Review Fluids,</em> <strong>7(1), 013801.</strong>
+              DOI:10.1103/PhysRevFluids.7.013801. [Impact Factor: 2.5]</span
+            >
+          </p>
+
+</div><!-- End Service Item -->
+
+</div>
+
+<style>
+  .my-button-color {
+  background-color: rgb(77, 85, 151); /* Example color - replace with yours */
+}
+
+</style>
+
+<!-- Publications modal -->
+<div class="row my-4">
+  <div class="col-lg-4 col-sm-6 mx-auto text-center">
+    <a 
+      class="btn btn-primary btn-gradient-45 my-button-color" 
+      href="publication.html" 
+      data-toggle="modal" data-target=".publications-modal" 
+      >Find Out More <i class="icofont-long-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
+
+<div class="modal fade publications-modal" tabindex="-1"  role="dialog" aria-labelledby="publications-modal" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content container p-4 text-justify">
+      <h3>Journal Publications</h3>
+
+
+
+
+<!-- /.section-title -->
+</div>
+<!-- /.col-lg-7 -->
+</div>
+</div>
+<!-- /.container -->
+</div>
+
+
+
+
+<!------------------------------------------------------------------------------------------>
+
+<!-----------------------------------TEAM CSS------------------------------------>
+<style>
+#leadership  {
+  padding-top: 1%;
+  padding-bottom: 10%;
+  background-color: rgb(161, 208, 249);
+}
+
+#leadership .container {
+  max-width: 100%;
+  margin-left: 8%;
+}
+
+#leadership .section-title {
+  margin-left: 0%;
+  margin-bottom: -3%;
+}
+
+
+.team-member {
+    width: 300px; /* Set the width of the container */
+    height: 100px; /* Set the height to be equal to the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc; /* Optional: Add a border to distinguish each member */
+    margin: 0 auto; /* Optional: Center the container within its column */
+}
+
+.team-member .member-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15%;
+}
+
+.team-member .member-info h4{
+font-size: 15px;
+padding-top: 10px;
+}
+
+
+.team-member .member-info p{
+font-size: 12px;
+margin-top: -5px; /* Adjust this value to reduce space */
+}
+
+.team-member .member-img img {
+    width: 150px; /* Set the width you want */
+    height: 150px; /* Set the height to be equal to the width */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.website-box {
+  margin-top: 5px;
+}
+
+
+@media (max-width: 1024px) {
+            
+  .team-member {
+    width: 300px; /* Set the width of the container */
+    height: 100px; /* Set the height to be equal to the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc; /* Optional: Add a border to distinguish each member */
+    margin: 0 auto; /* Optional: Center the container within its column */
+    margin-left: 20%;
+}
+
+}
+
+
+</style>
+
+
+<section id="leadership" class="team section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 style="margin-top:2%">Leadership</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+      <!-- First Row -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/amitabh.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Amitabh BHATTACHARYA</h4>
+            <p>Professor, Department of Applied Mechanics, IIT Delhi</p><br>
+            
+            <div class="website-box">
+              <a href="https://sites.google.com/site/amitabhresearch" target="_blank">Webpage</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+      <!-- Repeat above block for each team member in the first row -->
+
+      <!-- Second Team Member -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/tanmoy.png" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Tanmoy CHAKRABORTY</h4>
+              <p> Associate Professor, Department of Electrical Engineering, IIT Delhi</p><br>
+              
+              <div class="website-box">
+                <a href="https://www.tanmoychak.com/" target="_blank">Webpage</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Third Team Member -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/vamsi.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Vamsi. K. CHALAMALLA</h4>
+            <p> Assistant Professor,  Department of Applied Mechanics, IIT Delhi</p><br>
+            
+            <div class="website-box">
+                <a href="https://sites.google.com/site/vkchalama/" target="_blank">Webpage</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Fourth Team Member -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/amlendu_d.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Amlendu K. DUBEY</h4>
+            <p> Associate Professor, Department of Management Studies, IIT Delhi</p><br>
+            
+            <div class="website-box">
+                <a href="http://dms.iitd.ac.in/faculity_type/prof-amlendu-kumar-dubey/" target="_blank">Webpage</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Fifth Team Member -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/skm_new.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Saroj K. MISHRA</h4>
+          <p> Professor, Centre for Atmospheric Sciences, IIT Delhi</p><br>
+          
+          <div class="website-box">
+              <a href="https://dcecm.iitd.ac.in/skm/website/" target="_blank">Webpage</a>
+          </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+    </div>
+
+    <!-- Second Row -->
+    <div class="row gy-4 mt-4">
+      <!-- Add new team members for the second row here -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="600">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/panigrahi1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Bijaya K. PANIGRAHI</h4>
+            <p> Professor, Department of Electrical Engineering, IIT Delhi</p><br>
+            
+            <div class="website-box">
+                <a href="http://ctech.iitd.ac.in/bkpanigrahi.html" target="_blank">Webpage</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Repeat similar blocks for team members 2-5 of the second row -->
+
+      <!-- Second Team Member of Second Row -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="700">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/mathilis.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Maithali SHARAN</h4>
+          <p> INSA Senior Scientist, IIT Delhi</p><br>
+          
+          <div class="website-box">
+              <a href="http://web.iitd.ac.in/~mathilis/" target="_blank">Webpage</a>
+          </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Third Team Member of Second Row -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="800">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/shaurya.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Shaurya SHRIYAM</h4>
+            <p> Assistant Professor, Department of Mechanical Engineering, IIT Delhi</p><br>
+            
+            <div class="website-box">
+                <a href="https://web.iitd.ac.in/~shriyam/index.html" target="_blank">Webpage</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Fourth Team Member of Second Row -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="900">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/sawan_new1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Sawan S. SINHA</h4>
+          <p> Professor, Department of Applied Mechanics, IIT Delhi</p><br>
+          
+          <div class="website-box">
+              <a href="https://sites.google.com/view/sawanssinharesearchteaching/home" target="_blank">Webpage</a>
+          </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Fifth Team Member of Second Row -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="1000">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/team/CO-PI/Amber.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Amber SRIVASTAVA</h4>
+                  <p> Assistant Professor, Department of Mechanical Engineering, IIT Delhi</p><br>
+                  
+                  <div class="website-box">
+                      <a href="https://asrivastava93.github.io/index.html" target="_blank">Webpage</a>
+                  </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!----------------------------------------------------OPPORTUNITIES------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #opportunites {
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+        }
+
+        #content {
+            text-align: center;
+            width: 60%;
+            font-size: 20px;
+            color: rgb(77, 85, 151);
+            margin-right: 10%;
+            margin-top: -5%;
+        }
+
+        #opportunites .logo {
+            width: 20%;
+            margin-left: 70%;
+            margin-top: -5%;
+        }
+
+        #opportunites h2 {
+            z-index: 1;
+            position: relative;
+            color: rgb(77, 85, 151);
+            margin: 0;
+            margin-top: -13%;
+        }
+
+        .design {
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            width: 150px; /* Adjust the width as needed */
+            animation: wave-motion 3s ease-in-out infinite; /* Animation for wave-like motion */
+        }
+
+        .design img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Keyframes for wave-like animation */
+        @keyframes wave-motion {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(80px); } /* Adjust the distance as necessary */
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <section id="opportunites">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Opportunities</h2>
+        </div>
+
+        <!-- Main content area with logo on the right -->
+        <div class="content-wrapper">
+            <!-- Text content -->
+            <div id="content" data-aos="fade-up">
+                <p>We invite researchers from natural science and pertaining
+                    interdisciplinary areas to join the DST Centre of Excellence
+                    for Climate Information. Currently, we are looking for
+                    candidates having some similarities with our research area.</p><br>
+                <p>The research positions in these areas are available at
+                    various levels, e.g., Junior Research Fellow, Senior
+                    Research Fellow, Project Associate, Research Associate. The
+                    qualification for these positions is as per Institute and
+                    DST’s guidelines. The salary for these positions is based on
+                    qualification and experience.</p><br>
+                <p>Besides, we host short and long-term visitors and will be
+                    more than happy to welcome you if you want to visit for
+                    research collaborations; in that case please feel free to
+                    contact Dr. Saroj Kanta Mishra at skm@iitd.ac.in.</p>
+            </div>
+
+            <!-- Logo on the right -->
+            <div class="logo opp section-title" data-aos="fade-up">
+                <img src="assets/img/Logo_opportunities.gif" alt="Logo" style="width:100%; align-items: center;">
+            </div>
+        </div>
+
+        <!-- Design image -->
+        <div class="design" data-aos="fade-up">
+            <img src="assets/img/Opportunities/rectangle7.png" alt="Design Image">
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+<!---------------------------------------------CONTACT--------------------------------->
+
+<style>
+  #contact {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    margin-top:5%
+  }
+
+  #contact {
+            background-image: url("assets/img/ContactBackground11.png"); /* Replace with your image path */
+            background-size: cover; /* Make the image cover the entire background */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-attachment: fixed; /* Keep the image fixed while scrolling */
+            min-height: 100vh; /* Ensure the background extends to the full viewport height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+  .info-wrap {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Ensure readability over video */
+  }
+
+  .info-item {
+    margin-bottom: 20px;
+  }
+
+  .info-horizontal {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info-horizontal .info-item {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .info-horizontal .info-item:last-child {
+    margin-right: 0;
+  }
+</style>
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 style="margin-top:5%;">Contact Us</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container"  data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-5">
+        <div class="info-wrap">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Address</h3>
+              <p>DST Centre of Excellence for Climate Information, Room No. 414, Block VI, IIT Delhi</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <!-- Call Us and Email Us Side by Side -->
+          <div class="info-horizontal">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91-11-2659-1390</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>skm@iitd.ac.in</p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7622625024133!2d77.18809427620846!3d28.546864687964405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1df42fe25b85%3A0xdb9bc41b24e9f864!2sDST%20CoE%20in%20Climate%20Modeling!5e0!3m2!1sen!2sin!4v1725519632619!5m2!1sen!2sin"
+            width="100%"
+            height="270"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Contact Section -->
+
+
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------->
+
+
+ 
+
+    
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+  <!-- JavaScript to Ensure Scroll to Top on Refresh -->
+  <script>
+    // Scroll to top on load
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
+  </script>
+
+</body>
+
+</html>
