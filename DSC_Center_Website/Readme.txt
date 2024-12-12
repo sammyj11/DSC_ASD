@@ -1,6 +1,10 @@
-Thanks for downloading this template!
 
-Template Name: Arsha
-Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+
+Command to run:
+cd /path/to/project
+
+# Python 3
+python -m http.server 8000
+
+# OR Python 2
+python -m SimpleHTTPServer 8000
